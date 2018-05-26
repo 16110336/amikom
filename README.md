@@ -1,0 +1,2 @@
+# amikom
+the first projek
