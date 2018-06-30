@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery stop animation</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideDown(5000);
+			});
+			$("#stop").click(function(){
+				$("#panel").stop();
+			});
+		});
+	</script>
+	<style>
+	#panel, #flip {
+		padding: 5px;
+		font-size: 18px;
+		text-align: center;
+		background-color: #555;
+		color: white;
+		border: solid 1px #666;
+		border-radius: 3px;
+	}
+	#panel{
+		padding: 250px 50px;
+		display: none;
+	}
+	</style>
+</head>
+<body>
+
+<button id="stop">stop sliding</button>
+<div id="flip">star</div>
+<div id="panel">stop henti</div>
+
+</body>
+</html>

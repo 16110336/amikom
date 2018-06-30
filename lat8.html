@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery - chaining</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p1").css("color","red").slideUp(2000).slideDown(2000);
+			});
+		});
+	</script>
+</head>
+<body>
+<p id="p1">is fun</p>
+<button>clic me</button>
+</body>
+</html>
